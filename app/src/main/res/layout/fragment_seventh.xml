@@ -1,0 +1,113 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForthFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/textview_second"
+            android:layout_width="373dp"
+            android:layout_height="238dp"
+            android:layout_marginTop="20dp"
+            android:text="The objective of this course is to introduce fundamental techniques of algorithm analysis, to introduce common data structures, their properties and implementation and to apply C++ programming skills to implement solutions using common data structures to practical problems. It is a “required” course for the CS program as well as it is a “core” or “elective” course for all FENS programs."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.605"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/fab_margin"
+            android:clickable="true"
+            android:foreground="@android:drawable/ic_media_play"
+            android:foregroundGravity="fill"
+            android:foregroundTint="#FFFFFF"
+            android:rotationY="-180"
+            app:backgroundTint="#9BCC65"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+            app:layout_constraintStart_toStartOf="@+id/toolbar2"
+            app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="107dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/gulsen"
+            app:layout_constraintBottom_toTopOf="@+id/textview_second"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            app:layout_constraintVertical_bias="0.436" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="194dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="12dp"
+            android:text="Gulsen Demiroz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.397"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="381dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="12dp"
+            android:hint="hint"
+            android:textColorHighlight="#8BC34A"
+            android:textColorLink="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_second" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="366dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="365dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rounded_toolbar_background"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="50dp"
+            android:layout_height="49dp"
+            android:clickable="true"
+            android:foreground="@android:drawable/stat_notify_chat"
+            android:foregroundGravity="fill"
+            android:foregroundTint="#FFFFFF"
+            app:backgroundTint="#9BCC65"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputEditText"
+            app:layout_constraintEnd_toEndOf="@+id/textInputEditText"
+            app:layout_constraintTop_toTopOf="@+id/textInputEditText"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
